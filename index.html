@@ -2469,9 +2469,9 @@
                                 <option value="gpt-3.5-turbo">GPT-3.5</option>
                                 <option value="gpt-3.5-turbo-16k">GPT-3.5-16K</option>
                                 <option value="gpt-4">GPT-4</option>
-                                <option value="gpt-4-browsing" data-i18n-key="gptBrowsing"></option>
+                                <!-- <option value="gpt-4-browsing" data-i18n-key="gptBrowsing"></option>
                                 <option value="gpt-4-dalle">GPT-4-DALLE</option>
-                                <option value="gpt-4-32k">GPT-4-32K</option>
+                                <option value="gpt-4-32k">GPT-4-32K</option> -->
                             </select>
                         </div>
                         <div>
@@ -2859,15 +2859,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="setContent setNotNormalFlow">
+                        <div class="setContent setNotNormalFlow" style="display: none; ">
                             <div class="setTitle" data-i18n-key="aiEndpoint"></div>
                             <div class="setDetail inputDetail" style="position: relative;">
-                                <input class="inputTextClass" placeholder="https://api.openai.com/" autocomplete="off"
+                                <input class="inputTextClass" value="https://www.gptapi.us" autocomplete="off"
                                     id="apiHostInput" />
                                 <div id="apiSelect" tabindex="-1" style="display: none;"></div>
                             </div>
                         </div>
-                        <div class="setContent" style="margin-top: 83px;">
+                        <div class="setContent" style="margin-top: 0px;">
                             <div class="setTitle" data-i18n-key="aiKey"></div>
                             <div class="setDetail inputDetail apiDetail">
                                 <input class="inputTextClass" type="text" placeholder="sk-xxxxxx" id="keyInput"
@@ -3382,8 +3382,8 @@
                 "customDarkTheme": "自定义深色主题时间",
                 "startDark": "开始时间",
                 "endDark": "结束时间",
-                "aiEndpoint": "OpenAI接口",
-                "aiKey": "API密钥",
+                "aiEndpoint": "我的接口",
+                "aiKey": "在此输入你所购买的API密钥",
                 "used": "已用 ",
                 "available": "可用 ",
                 "navKey": "切换导航",

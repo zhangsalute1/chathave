@@ -2441,6 +2441,20 @@
                             <circle cx="50" cy="80" r="10" fill="#99c959" />
                         </svg>
                     </button>
+                    <div class="navFunc" style="padding: 0;">
+                        <div class="setBtn" id="sysSetting1" data-i18n-title="setting" title>
+                            <svg width="24" height="24">
+                                <use xlink:href="#settingIcon" />
+                            </svg>
+                        </div>
+                    </div>
+                    <script>
+                        document.getElementById("sysSetting1").onclick = () => {
+                            document.getElementById("sysMask").style.display = "flex";
+                            checkStorage();
+                            document.getElementById("sysMask").onmousedown = endSetEvent;
+                        };
+                    </script>
                 </div>
                 <div id="setDialog" style="display:none;">
                     <div class="setSwitch">
